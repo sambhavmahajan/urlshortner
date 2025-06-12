@@ -35,7 +35,7 @@ func shortenHandler(w http.ResponseWriter, r *http.Request) {
 	}
 	UID = tmp
 	for exists {
-		UID++
+		UID--
 		if UID < MIN_RANGE {
 			fmt.Fprint(w, "No empty slots available.")
 			return
