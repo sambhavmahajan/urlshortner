@@ -13,7 +13,7 @@ This is a URL shortener project which shortens the URLs. It takes a random numbe
 #### Collusion Strategy
 Linear probing is used, when a collusion occurs, first we look at the right, if the right is full, we look at the left (kinda caught a bug while writing this, in the shortenHandler function, check out issue [#2](https://github.com/sambhavmahajan/urlshortner/issues/2))
 
-There are constants in main.go, the host, port, user, password and dbname, make sure to edit those. Look at line number 60. No i did not make an '.evn' file, yes i know its bad practice, no i am not sorry, yes its because it forgot(i even forgot to write this documentation, what do you expect from me)
+There are constants in main.go, the host, port, user, password and dbname, make sure to edit those. Look at line number 60. No i did not make an '.env' file, yes i know its bad practice, no i am not sorry, yes its because it forgot(i even forgot to write this documentation, what do you expect from me)
 
 #### Before running the webapp run the command
 `go mod tidy` - for the modules, mostly because of database and sql modules, or i guess only database modules(lib/pq and database/sql)
